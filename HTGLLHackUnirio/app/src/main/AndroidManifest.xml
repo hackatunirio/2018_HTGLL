@@ -19,7 +19,16 @@
         <activity android:name=".AssistenteSocial" />
         <activity android:name=".Projetos" />
         <activity android:name=".Cursos" />
-        <activity android:name=".Eventos"></activity>
+        <activity android:name=".Eventos" />
+        <activity android:name=".Chat" />
+        <activity
+            android:name=".Guest2"
+            android:label="@string/title_activity_guest2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AjudanteChat" />
+        <activity android:name=".CadaProjeto" />
+        <activity android:name=".CadaEvento" />
+        <activity android:name=".CadaCurso"></activity>
     </application>
 
 </manifest>
