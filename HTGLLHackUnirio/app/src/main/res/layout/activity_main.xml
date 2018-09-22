@@ -32,7 +32,7 @@
                     android:layout_height="64dp"
                     android:background="@drawable/circle_background_assistencia"
                     android:padding="10dp"
-
+                    android:src="@drawable/careone"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -76,6 +76,8 @@
                     android:layout_height="64dp"
                     android:background="@drawable/circle_background_projetos"
                     android:padding="10dp"
+                    android:src="@drawable/projectmanagementone"
+
 
                     />
                 <TextView
@@ -126,8 +128,9 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circle_background_assistencia"
+                    android:background="@drawable/circle_background_cursos"
                     android:padding="10dp"
+                    android:src="@drawable/mortarboardone"
 
                     />
                 <TextView
@@ -172,6 +175,7 @@
                     android:layout_height="64dp"
                     android:background="@drawable/circle_background_eventos"
                     android:padding="10dp"
+                    android:src="@drawable/calendarone"
 
                     />
                 <TextView
