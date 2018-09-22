@@ -10,4 +10,5 @@ public class AjudanteChat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajudante_chat);
     }
+
 }

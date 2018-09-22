@@ -9,15 +9,29 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Anonimo {
+import java.io.Serializable;
+
+public class Anonimo implements Serializable {
     private String email;
     private String senha;
     private int id;
+    public Anonimo(){
+
+    }
     public Anonimo(String email, String senha, int id){
         this.email = email;
         this.senha = senha;
         this.id = id;
     }
+    public Anonimo(String email, String senha) {
+        this.email = email;
+        this.senha = senha;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public String getSenha() {
         return senha;
     }
@@ -28,30 +42,16 @@ public class Anonimo {
     public void setEmail(String email) {
         this.email = email;
     }
-    /*
-    public int gerarId(){
-        int maiorid = 0;
-        DatabaseReference database = FirebaseDatabase.getInstance().getReference("Anonimo");
-        database.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot Snapshot) {
-                try {
-                    for (DataSnapshot dataSnapshot : Snapshot.getChildren()) {
-                        Anonimo value = dataSnapshot.getValue(Anonimo.class);
-                        if(value.id>id){
-                            maiorid = id;
-                        }
-                    }
-                }catch (Exception e){
 
-                }
-            }
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-            }
-        });
+    public boolean equals(Object o){
+        Anonimo anonimo = (Anonimo)o;
+        if(this.id==anonimo.id||this.email.equals(anonimo.email)){
+            return true;
+        }
+        else{
+            return false;
+        }
 
     }
-    */
+
 }

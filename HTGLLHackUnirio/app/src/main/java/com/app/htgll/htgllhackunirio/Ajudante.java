@@ -5,14 +5,21 @@ public class Ajudante {
     private String senha;
     private String nome;
     private String matricula;
-    private String id;
+    private int id;
 
-    private Ajudante(String email,String senha ,String nome,String matricula,String id){
+    private Ajudante(String email,String senha ,String nome,String matricula,int id){
         this.email = email;
         this.senha = senha;
         this.nome = nome;
         this.matricula = matricula;
         this.id = id;
+    }
+    public Ajudante(){
+
+    }
+    public Ajudante(String email, String senha){
+        this.email = email;
+        this.senha = senha;
     }
 
     public String getEmail() {
@@ -47,7 +54,7 @@ public class Ajudante {
         this.matricula = matricula;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 }

@@ -47,8 +47,9 @@
             android:textColor="#000"
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:hint="Nome"
-            android:inputType="text"
+            android:id="@+id/email"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
             android:background="@drawable/retangulo"
             android:backgroundTint="@color/caixa_cadastro"
 
@@ -63,6 +64,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#000"
+            android:id="@+id/senha"
             android:layout_width="250dp"
              android:layout_height="50dp"
              android:hint="Senha"
@@ -88,6 +90,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/retangulo"
                 android:textSize="10sp"
+                android:onClick="login"
                 android:text="Login"
                 android:textColor="@color/preto"
                 />
@@ -96,6 +99,7 @@
                 android:layout_height="35dp" />
             <Button
                 android:backgroundTint="@color/botao_cadastro"
+                android:onClick="cadastro"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_width="130dp"
