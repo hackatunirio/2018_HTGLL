@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HTGLLHackUnirio</string>
+    <string name="title_activity_guest">Guest</string>
+    <string name="title_activity_guest2">guest2</string>
 </resources>

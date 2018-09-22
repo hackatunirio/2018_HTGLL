@@ -4,6 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Projetos">
+    tools:context=".Projetos"
+    android:background="@color/fundo"
+    >
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="PROJETOS"
+        android:textColor="@color/preto"
+        android:textSize="30dp"
+        />
 </android.support.constraint.ConstraintLayout>
