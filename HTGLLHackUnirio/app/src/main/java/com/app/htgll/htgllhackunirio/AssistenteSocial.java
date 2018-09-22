@@ -18,7 +18,6 @@ public class AssistenteSocial extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(i);
-
             }
         });
     }
