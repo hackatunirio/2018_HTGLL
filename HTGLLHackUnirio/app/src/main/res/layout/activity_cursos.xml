@@ -12,7 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="CURSOS"
+        android:textAlignment="center"
         android:textColor="@color/preto"
         android:textSize="30dp"
         />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaCursos">
+    </ListView>
 </android.support.constraint.ConstraintLayout>
