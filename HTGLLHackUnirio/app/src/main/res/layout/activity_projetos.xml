@@ -25,8 +25,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+<<<<<<< HEAD
                 android:textSize="20dp"
                 android:textColor="@color/preto"
+=======
+                android:textStyle:"bold"
+>>>>>>> 164677672fcde5687ecf44a373c3840d08f1d956
                 android:text="Tema: Cultura"/>
             <TextView
                 android:layout_width="match_parent"
@@ -46,5 +50,43 @@
                 android:textSize="20dp"
                 android:textColor="@color/preto"
                 android:text="Resumo: O presente projeto consiste em desenvolver ações educativas, bem como estabelecer estratégias de promoção em saúde. O projeto está sendo desenvolvido numa instituição que atende..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Saúde"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: Avaliação dos níveis síricos de trombopoetina em pacientes sob terapia antiviral para infecção crínica pelo vírus da hepatite C"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Saúde"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Este projeto tem como objetivo estudar as diversas espcies quðmicas que podem estar contidas em um corpo d'˜gua, que pode ser Saúde"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Biologia"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: Produção e composição do óleo essencial em plantas micropopagadas de carqueja Asteraceae  em resposta ao jasmonato de metila e reguladores de crescimento"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Ciências Sociais"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: Dramaturgia, História: gêneros e linguagens"/>
+            
     </LinearLayout>
+<<<<<<< HEAD
 </LinearLayout>
+=======
+
+</LinearLayout>
+>>>>>>> 164677672fcde5687ecf44a373c3840d08f1d956
