@@ -90,7 +90,6 @@
                 android:layout_height="50dp"
                 android:background="@drawable/retangulo"
                 android:textSize="10sp"
-                android:onClick="login"
                 android:text="Login"
                 android:textColor="@color/preto"
                 />

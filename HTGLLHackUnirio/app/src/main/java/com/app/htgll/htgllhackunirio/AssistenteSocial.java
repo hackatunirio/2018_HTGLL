@@ -26,11 +26,24 @@ public class AssistenteSocial extends AppCompatActivity {
     private DatabaseReference database;
     private int maiorid = 0;
     private boolean controle = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assistente_social);
-        Button botaoLogin = (Button) findViewById(R.id.botaoLogin);
+        Button b = (Button) findViewById(R.id.botaoLogin);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+               try{
+                   login();
+               }
+               catch(Exception e){
+                   Toast.makeText(getApplicationContext(), "Erro...", Toast.LENGTH_SHORT).show();
+               }
+
+            }
+        });
     }
     public void cadastro(View view) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         EditText e = (EditText) findViewById(R.id.email);
@@ -60,6 +73,7 @@ public class AssistenteSocial extends AppCompatActivity {
 
 
     }
+    //@to_do
     public int gerarId() {
         DatabaseReference database = FirebaseDatabase.getInstance().getReference("Anonimo");
         database.addValueEventListener(new ValueEventListener() {
@@ -91,11 +105,17 @@ public class AssistenteSocial extends AppCompatActivity {
         });
         return maiorid+1;
     }
-    public void login(View view) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+
+    public void login() throws NoSuchAlgorithmException, UnsupportedEncodingException {
+
+        final Intent intent = new Intent(this, Guest2.class);
+        final Intent intent2 = new Intent(this, AjudanteChat.class);
+
         EditText e = (EditText) findViewById(R.id.email);
         EditText s = (EditText) findViewById(R.id.senha);
         String email = e.getText().toString();
         String senha = s.getText().toString();
+
         if(email.equals("")||(senha.equals(""))){
             AlertDialog.Builder aviso = new AlertDialog.Builder(this);
             aviso.setTitle("Campo vazio");
@@ -104,16 +124,19 @@ public class AssistenteSocial extends AppCompatActivity {
             aviso.show();
             return;
         }
+
         email = email.replace('.','P');
         MessageDigest algorithm = MessageDigest.getInstance("MD5");
         byte messageDigest[] = algorithm.digest(senha.getBytes("UTF-8"));
         StringBuilder hexString = new StringBuilder();
+
         for (byte b : messageDigest) {
             hexString.append(String.format("%02X", 0xFF & b));
         }
         senha = hexString.toString();
-        final Intent intent = new Intent(AssistenteSocial.this, Guest2.class);
+
         final Anonimo anonimo = new Anonimo(email, senha);
+
         database = FirebaseDatabase.getInstance().getReference("Anonimo/" + anonimo.getEmail());
         database.addValueEventListener(new ValueEventListener() {
             @Override
@@ -121,17 +144,20 @@ public class AssistenteSocial extends AppCompatActivity {
                 Anonimo value = dataSnapshot.getValue(Anonimo.class);
                 try {
                     if ((value.getEmail().equals(anonimo.getEmail()))&&(value.getSenha().equals(anonimo.getSenha()))) {
-                        Toast.makeText(getApplicationContext(), "Bem Vindo", Toast.LENGTH_SHORT).show();
-                        controle = false;
+                        Toast.makeText(getApplicationContext(), "Bem Vindo 1", Toast.LENGTH_SHORT).show();
+                        controle = true;
                         database = FirebaseDatabase.getInstance().getReference();
-                        //intent.putExtra("anonimo",  value);
+                       // intent.putExtra("anonimo",  value);
                         startActivity(intent);
+                        Toast.makeText(getApplicationContext(), "Bem Vindo 1.1", Toast.LENGTH_SHORT).show();
                     }
                     else{
                         Toast.makeText(getApplicationContext(), "Usuário ou senha incorretos 1", Toast.LENGTH_SHORT).show();
+                        controle = false;
                     }
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(), "Usuário ou senha incorretos 2", Toast.LENGTH_SHORT).show();
+                    controle = false;
                 }
             }
             @Override
@@ -140,7 +166,6 @@ public class AssistenteSocial extends AppCompatActivity {
             }
         });
         if(!controle){
-            final Intent intent2 = new Intent(this, Guest2.class);
             final Ajudante ajudante = new Ajudante(email, senha);
             database = FirebaseDatabase.getInstance().getReference("Ajudante/" + ajudante.getEmail());
             database.addValueEventListener(new ValueEventListener() {
@@ -149,17 +174,17 @@ public class AssistenteSocial extends AppCompatActivity {
                     Ajudante value = dataSnapshot.getValue(Ajudante.class);
                     try {
                         if ((value.getEmail().equals(ajudante.getEmail()))&&(value.getSenha().equals(ajudante.getSenha()))) {
-                            Toast.makeText(getApplicationContext(), "Bem Vindo", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Bem Vindo 2", Toast.LENGTH_SHORT).show();
                             controle = false;
                             database = FirebaseDatabase.getInstance().getReference();
                             //intent.putExtra("anonimo",  value);
-                            startActivity(intent);
+                            startActivity(intent2);
                         }
                         else{
                             Toast.makeText(getApplicationContext(), "Usuário ou senha incorretos 1", Toast.LENGTH_SHORT).show();
                         }
                     }catch (Exception e){
-                        Toast.makeText(getApplicationContext(), "Usuário ou senha incorretos 2", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
                 @Override
