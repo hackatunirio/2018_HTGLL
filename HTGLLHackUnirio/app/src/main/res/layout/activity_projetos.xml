@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Projetos"
@@ -12,8 +14,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Projetos"
-        android:gravity="center"
+        android:textAlignment="center"
+        android:gravity="top"
         android:textColor="@color/preto"
         android:textSize="30dp"
         />
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Cultura"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: O Programa de Extensão Teatro em Comunidades coordenado pela profa. Dra. Marina Henriques Coutinho, integra ações nos três eixos de formação em nível superior: ensino acadêmico..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Saude"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: O presente projeto consiste em desenvolver ações educativas, bem como estabelecer estratégias de promoção em saúde. O projeto está sendo desenvolvido numa instituição que atende..."/>
+    </LinearLayout>
+
+</LinearLayout>
