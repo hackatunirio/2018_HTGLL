@@ -50,7 +50,7 @@
                             android:id="@+id/pikabol"
                             android:layout_width="300dp"
                             android:layout_height="50dp"
-                            android:text="Boa tarde. Venho aqui através dessa mensagem expressa a si..."
+                            android:text="Boa tarde. Venho aqui através dessa mensagem expressar a minha..."
                             android:textSize="15sp"
                             /></LinearLayout>
                     </LinearLayout>
@@ -58,14 +58,7 @@
                         android:layout_width="300dp"
                         android:layout_height="2dp"/>
                 </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:gravity="bottom"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_margin="10dp"
-                    >
-                </View>
+
 
     <!-- jfndksjfndksjfnkdsjfnksjdnfsdfsdkjfndskjfnkds -->
 
@@ -114,13 +107,7 @@
                                 android:layout_width="300dp"
                                 android:layout_height="2dp"/>
                         </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorPrimaryDark"
-                            android:layout_margin="10dp"
-                            >
-                        </View>
+
 
     <!-- jfndksjfndksjfnkdsjfnksjdnfsdfsdkjfndskjfnkds -->
 
@@ -161,7 +148,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="50dp"
-                    android:text="Ano passado eu também passei por uma fase bem dificil na minha vi..."
+                    android:text="Ano passado eu estive em uma fase          dificil na minha vida onde eu..."
                     android:textSize="15sp"
                     /></LinearLayout>
         </LinearLayout>
@@ -169,13 +156,6 @@
             android:layout_width="300dp"
             android:layout_height="2dp"/>
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorPrimaryDark"
-        android:layout_margin="10dp"
-        >
-    </View>
 
     <!-- jfndksjfndksjfnkdsjfnksjdnfsdfsdkjfndskjfnkds -->
 
@@ -224,13 +204,6 @@
             android:layout_width="300dp"
             android:layout_height="2dp"/>
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorPrimaryDark"
-        android:layout_margin="10dp"
-        >
-    </View>
 
     <!-- jfndksjfndksjfnkdsjfnksjdnfsdfsdkjfndskjfnkds -->
 
@@ -271,7 +244,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="50dp"
-                    android:text="Podemos marcar uma consulta para a próxima quint-feira então?"
+                    android:text="Podemos marcar uma consulta para a próxima quinta-feira então?"
                     android:textSize="15sp"
                     /></LinearLayout>
         </LinearLayout>
@@ -279,13 +252,7 @@
             android:layout_width="300dp"
             android:layout_height="2dp"/>
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorPrimaryDark"
-        android:layout_margin="10dp"
-        >
-    </View>
+
 
 
 </RelativeLayout>

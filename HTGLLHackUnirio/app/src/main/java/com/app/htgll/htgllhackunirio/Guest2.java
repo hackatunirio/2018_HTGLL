@@ -18,7 +18,7 @@ public class Guest2 extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Toast.makeText(getApplicationContext(), "Guest2", Toast.LENGTH_SHORT).show();
+
         setContentView(R.layout.activity_guest2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
        // setSupportActionBar(toolbar);

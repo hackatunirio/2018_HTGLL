@@ -144,12 +144,12 @@ public class AssistenteSocial extends AppCompatActivity {
                 Anonimo value = dataSnapshot.getValue(Anonimo.class);
                 try {
                     if ((value.getEmail().equals(anonimo.getEmail()))&&(value.getSenha().equals(anonimo.getSenha()))) {
-                        Toast.makeText(getApplicationContext(), "Bem Vindo 1", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Bem Vindo 1", Toast.LENGTH_SHORT).show();
                         controle = true;
                         database = FirebaseDatabase.getInstance().getReference();
                        // intent.putExtra("anonimo",  value);
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(), "Bem Vindo 1.1", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Bem Vindo 1.1", Toast.LENGTH_SHORT).show();
                     }
                     else{
                         Toast.makeText(getApplicationContext(), "Usuário ou senha incorretos 1", Toast.LENGTH_SHORT).show();
