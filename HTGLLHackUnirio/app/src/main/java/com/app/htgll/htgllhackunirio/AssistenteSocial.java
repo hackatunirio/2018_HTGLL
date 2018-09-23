@@ -31,7 +31,6 @@ public class AssistenteSocial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assistente_social);
         Button botaoLogin = (Button) findViewById(R.id.botaoLogin);
-        final Intent i = new Intent(this, Guest2.class);
     }
     public void cadastro(View view) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         EditText e = (EditText) findViewById(R.id.email);
@@ -113,7 +112,7 @@ public class AssistenteSocial extends AppCompatActivity {
             hexString.append(String.format("%02X", 0xFF & b));
         }
         senha = hexString.toString();
-        final Intent intent = new Intent(this, Guest2.class);
+        final Intent intent = new Intent(AssistenteSocial.this, Guest2.class);
         final Anonimo anonimo = new Anonimo(email, senha);
         database = FirebaseDatabase.getInstance().getReference("Anonimo/" + anonimo.getEmail());
         database.addValueEventListener(new ValueEventListener() {

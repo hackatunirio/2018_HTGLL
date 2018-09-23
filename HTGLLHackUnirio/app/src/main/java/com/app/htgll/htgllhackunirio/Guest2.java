@@ -10,7 +10,7 @@ import android.view.View;
 
 public class Guest2 extends AppCompatActivity {
 
-    @SuppressLint("ResourceAsColor")
+    //@SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,7 @@ public class Guest2 extends AppCompatActivity {
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setImageResource(R.drawable.ic_add_black_24dp);
-        fab.setBackgroundColor(R.color.botao_cadastro);
+        fab.getResources().getColor(R.color.botao_cadastro);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
