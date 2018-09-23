@@ -1,18 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Eventos"
     android:background="@color/fundo"
+    android:orientation="vertical"
     >
-
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="EVENTOS"
-        android:textColor="@color/preto"
-        android:textSize="30dp"
+        >
+     <LinearLayout
+         android:paddingTop="10dp"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/evento"
+        android:background="@drawable/retangulonovo"
+        android:src="@drawable/unidois"
+        android:paddingTop="10dp"
         />
-</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="SEMANA DE BIOMEDICINA"
+        android:textSize="20dp"
+        android:textColor="@color/preto"
+        android:gravity="center"
+        android:background="@drawable/retangulonovo"
+        style="bold"
+
+        />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:orientation="horizontal"
+             >
+             <TextView
+                 android:layout_width="220dp"
+                 android:layout_height="40dp"
+                 android:text="Data: 06/11 até 09/11"
+                 android:textSize="16dp"
+                 android:textColor="@color/preto"
+                 android:gravity="left"
+                 style="bold"
+                 android:paddingLeft="10dp"
+                 android:background="@drawable/retangulonovo"
+                 />
+             <Button
+                 android:id="@+id/vem"
+                 android:layout_width="160dp"
+                 android:layout_height="40dp"
+                 android:gravity="right"
+                 android:background="@drawable/retangulonovoblue"
+                 android:text="SE INSCREVA!"
+                 android:textAlignment="center"
+                 android:textColor="#FFF"
+                 />
+
+         </LinearLayout>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+
+
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="200dp"
+             android:id="@+id/evento2"
+             android:background="@drawable/retangulonovo"
+             android:src="@drawable/unitres"
+             android:paddingTop="10dp"
+             />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:text="SEMANA NACIONAL DE INTEGRAÇÂO"
+             android:textSize="20dp"
+             android:textColor="@color/preto"
+             android:gravity="center"
+             android:background="@drawable/retangulonovo"
+             style="bold"
+
+             />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:orientation="horizontal"
+             >
+             <TextView
+                 android:layout_width="220dp"
+                 android:layout_height="40dp"
+                 android:text="Data: 15/10 até 19/10"
+                 android:textSize="16dp"
+                 android:textColor="@color/preto"
+                 android:gravity="left"
+                 style="bold"
+                 android:paddingLeft="10dp"
+                 android:background="@drawable/retangulonovo"
+                 />
+             <Button
+                 android:layout_width="160dp"
+                 android:layout_height="40dp"
+                 android:gravity="right"
+                 android:background="@drawable/retangulonovoblue"
+                 android:text="SE INSCREVA!"
+                 android:textAlignment="center"
+                 android:textColor="#FFF"
+                 />
+
+         </LinearLayout>
+
+         <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+
+
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="200dp"
+             android:id="@+id/evento3"
+             android:background="@drawable/retangulonovo"
+             android:src="@drawable/uni"
+             android:paddingTop="10dp"
+             />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:text="HACK@UNIRIO"
+             android:textSize="20dp"
+             android:textColor="@color/preto"
+             android:gravity="center"
+             android:background="@drawable/retangulonovo"
+             style="bold"
+
+             />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:orientation="horizontal"
+             >
+             <TextView
+                 android:layout_width="220dp"
+                 android:layout_height="40dp"
+                 android:text="Data: 21/10 até 23/10"
+                 android:textSize="16dp"
+                 android:textColor="@color/preto"
+                 android:gravity="left"
+                 style="bold"
+                 android:paddingLeft="10dp"
+                 android:background="@drawable/retangulonovo"
+                 />
+             <Button
+                 android:layout_width="160dp"
+                 android:layout_height="40dp"
+                 android:gravity="right"
+                 android:background="@drawable/retangulonovoblue"
+                 android:text="SE INSCREVA!"
+                 android:textAlignment="center"
+                 android:textColor="#FFF"
+                 />
+
+         </LinearLayout>
+     </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

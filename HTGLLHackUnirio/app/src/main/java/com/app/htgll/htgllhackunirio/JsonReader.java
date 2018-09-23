@@ -11,7 +11,7 @@ import org.json.*;
 
 public class JsonReader {
 
-    public String jsonLeitor(String tema){
+    public static String jsonLeitor(String tema){
 
         String link = "http://sistemas.unirio.br/api/"+ tema +"?API_KEY=94ebdcee824a8fc9876c4c0b22580540a8d2330da2ec089d2e396afce2ee20332383a2df43936763358021ef9d163a21";
         String palavra ="";
