@@ -39,6 +39,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:text="Resumo: O presente projeto consiste em desenvolver ações educativas, bem como estabelecer estratégias de promoção em saúde. O projeto está sendo desenvolvido numa instituição que atende..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Saúde"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: Avaliação dos níveis síricos de trombopoetina em pacientes sob terapia antiviral para infecção crínica pelo vírus da hepatite C"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Saúde"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Este projeto tem como objetivo estudar as diversas espcies quðmicas que podem estar contidas em um corpo d'˜gua, que pode ser Saúde"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Biologia"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: Produção e composição do óleo essencial em plantas micropopagadas de carqueja Asteraceae  em resposta ao jasmonato de metila e reguladores de crescimento"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tema: Ciências Sociais"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Resumo: Dramaturgia, História: gêneros e linguagens"/>
+            
     </LinearLayout>
 
 </LinearLayout>
