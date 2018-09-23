@@ -28,7 +28,11 @@
         <activity android:name=".AjudanteChat" />
         <activity android:name=".CadaProjeto" />
         <activity android:name=".CadaEvento" />
-        <activity android:name=".CadaCurso"></activity>
+        <activity android:name=".CadaCurso" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

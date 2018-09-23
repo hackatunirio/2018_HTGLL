@@ -11,7 +11,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.io.Serializable;
 
-public class Anonimo implements Serializable {
+public class Anonimo  implements Serializable {
     private String email;
     private String senha;
     private int id;

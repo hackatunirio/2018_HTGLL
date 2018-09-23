@@ -1,5 +1,8 @@
 package com.app.htgll.htgllhackunirio;
 
+import android.view.View;
+import android.widget.TextView;
+
 public class Mensagem {
     private String texto;
     private int idRemet;
@@ -7,7 +10,9 @@ public class Mensagem {
     private int id;
     private boolean lida;
 
+
     public Mensagem(String texto, int idRemet, int idDestin, int id) {
+
         this.texto = texto;
         this.idRemet = idRemet;
         this.idDestin = idDestin;
